@@ -19,7 +19,8 @@ int main()
 
 	// Solicit  and process input from user
 	std::cout << "\nPlease enter a single word to be reversed.\n";
-	std::cin >> obverse_string;
+	std::getline(std::cin, input); // Take whole line instead of single word
+	// std::cin >> obverse_string;
 	std::cout << "You typed \"" << obverse_string << "\"\n";
 	system("PAUSE");
 
@@ -35,4 +36,5 @@ int main()
 	// Output reversed string to user
 	std::cout << "Backwards, that's \"" << reverse_string << "\"\n";
 	system("PAUSE");
+	return 0;
 }

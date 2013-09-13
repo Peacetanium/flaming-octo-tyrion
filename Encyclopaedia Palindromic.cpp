@@ -11,7 +11,8 @@ int main()
 	string test;
 
 	std::cout << "Please enter a word you wish to check for being a palindrome.\n";
-	std::cin >> input;
+	std::getline(std::cin, input); // Take whole line instead of single word
+	// std::cin >> input;
 
 	// Reverse input and save into test
 	int i;
@@ -34,4 +35,5 @@ int main()
 		std::cout << "That is not a palindrome!\n";
 	}
 	system("PAUSE");
+	return 0;
 }
